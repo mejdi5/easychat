@@ -1,0 +1,98 @@
+.conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor:pointer;
+  }
+  
+  .conversationImg:hover{
+    background-color:#ebebeb
+  }
+  
+  .iconImg {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-left: 10px;
+    cursor:pointer;
+  }
+  
+  .sidebarchat{
+    display:flex;
+    padding:20px;
+    border-bottom:1px solid #f6f6f6;
+  }
+  
+  .sidebarchat:hover{
+    background-color:#ebebeb;
+    cursor:pointer;
+  }
+  
+  .sidebarchatactive{
+    display:flex;
+    padding:20px;
+    cursor:pointer;
+    border-bottom:1px solid #f6f6f6;
+    background-color: cadetblue;
+  }
+  
+  .readsidebarchat{
+    display:flex;
+    padding:20px;
+    border-bottom:1px solid #f6f6f6;
+    background-color: rgb(145, 151, 87);
+  }
+  
+  .sidebarChat_info > h2{
+    font-size:16px;
+    margin-bottom:8px;
+  }
+  .sidebarChat_info{
+    margin-left:15px;
+  }
+  
+  .sidebarchat_info:hover{
+    background-color:#ebebeb;
+  }
+  
+  .sidebar{
+    display:flex;
+    flex-direction:column;
+    flex:0.35;  
+  }
+  .sidebar-header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    border-right:1px solid lightgray;
+  }
+  .sidebar-headerRight{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .sidebar-headerRight>.MuiSvgIcon-root{
+    margin-right:2vw;
+    font-size:24px
+  }
+  
+  .sidebar_searchContainer>.MuiSvgIcon-root{
+    color:gray;
+    padding:10px;
+  }
+  .sidebar_searchContainer>input{
+    border:none;
+    outline-width:0;
+    margin-left:10px;
+  }
+  .sidebar-chats{
+    flex:1;
+    background-color:rgb(244, 247, 244);
+    overflow:scroll;
+    margin-top: 20px;
+    border: solid grey 1px
+  }

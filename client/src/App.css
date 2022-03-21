@@ -1,0 +1,79 @@
+.app {
+  display:grid;
+  place-items:center;
+  height:100vh;
+  background-color: white;
+}
+
+.app__body {
+  display:flex;
+    background-color:#ededed;
+    margin-top:-50px;
+    height:95%;;
+    width:95vw;
+    box-shadow:-1px 4px 20px -6px rgba(0,0,0,0.75)
+}
+
+.auth {
+  background-color: rgb(97, 170, 49);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.auth_container {
+  padding: 100px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px;
+}
+.auth_container > img {
+  object-fit: contain;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.login_text .register_text {
+  color: #ededed;
+}
+
+.auth_title{
+  color:white
+}
+
+.auth_form {
+  display:flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}        
+
+.login_form {
+  display: inline;
+}
+
+.form-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-right: 40px;
+  width: 200px;
+}
+
+.login_button {
+  margin-top: 3rem;
+  margin-left: 20%;
+}
+
+.register_button {
+  margin-top: 3rem;
+  margin-left: 20%;
+}
+
+
+
+

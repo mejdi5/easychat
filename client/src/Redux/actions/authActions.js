@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { Axios } from '../../Axios';
 import {
   USER_LOADING,
   LOGIN_USER,
@@ -20,7 +20,7 @@ const userLoading = () => (dispatch) => {
 export const registerUser = (newUser) => async (dispatch) => {
   dispatch(userLoading());
   try {
-    const res = await axios.post(`/api/users/register`, newUser, {});
+    const res = await Axios.post(`/api/users/register`, newUser, {});
     console.log(res.data)
     dispatch({
       type: REGISTER_USER,
@@ -50,7 +50,7 @@ export const loginUser = (formData) => async (dispatch) => {
   dispatch(userLoading());
 
   try {
-    const res = await axios.post(`/api/users/login`, formData);
+    const res = await Axios.post(`/api/users/login`, formData);
     dispatch({
       type: LOGIN_USER,
       payload: res.data, 
@@ -86,7 +86,7 @@ export const getAuthUser = () => async (dispatch) => {
         'x-auth-token': localStorage.getItem('x-auth-token'),
       },
     };
-    const res = await axios.get(`/api/users/authUser`, config);
+    const res = await Axios.get(`/api/users/authUser`, config);
     dispatch({
       type: GET_AUTH_USER,
       payload: res.data, 

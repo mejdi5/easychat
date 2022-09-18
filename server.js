@@ -25,13 +25,6 @@ app.use("/api/pictures", require('./routes/pictureRoute'));
 app.use("/api/groupConversations", require('./routes/groupConversationRoute'));
 
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  });
-}
-
 //connect database
 dotenv.config({ path: './config/.env' });
   try {
